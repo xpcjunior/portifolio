@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300&display=swap');
+
+:root {
+    --color-primary: #282c33;
+    --color-secondary: #33AF90;
+    --color-tertiary: #ABB2BF;
+    --font-primary: 'Roboto Mono', monospace;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--color-tertiary) !important;
+    font-family: var(--font-primary) !important;
+    background-color: var(--color-primary) !important;
+    color: var(--color-dark-text);
+}
+
+footer {
+    color: var(--color-tertiary);
+}
+
+.c-secondary {
+    color: var(--color-secondary);
+}
+
+.c-tertiary {
+    color: var(--color-tertiary);
+}
