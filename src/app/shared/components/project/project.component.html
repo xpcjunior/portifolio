@@ -8,7 +8,9 @@
 </div>
 
 <ng-template #loading>
-    <img class="img_project" [src]="src_img" alt="" />
+    <a [href]="project_url" target="_blank">
+        <img class="img_project grow" [src]="src_img" alt="" />
+    </a>
 </ng-template>
 
 <ng-template #aabb>
@@ -19,11 +21,11 @@
         </div>
         <div [ngClass]="{'d-flex justify-content-end': orientacao === false}">
 
-            <app-circle-button size="m">
+            <app-circle-button [link-url]="project_url" size="m">
                 <i class="fa fa-play c-secondary" aria-hidden="true"></i>
             </app-circle-button>
             
-            <app-circle-button size="m">
+            <app-circle-button [link-url]="code_url" size="m">
                 <i class="fa fa-code c-tertiary" aria-hidden="true"></i>
             </app-circle-button>
 

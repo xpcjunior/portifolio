@@ -27,6 +27,9 @@ export class ProjectComponent {
   @Input('project-code-url')
   code_url: string = '';
 
+  @Input('project-url')
+  project_url: string = '#';
+
   @Input('orientation')
   orientacao: Boolean = false;
 

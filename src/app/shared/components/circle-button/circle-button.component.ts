@@ -1,20 +1,24 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   selector: 'app-circle-button',
   template: `
-  <button type="button" class="btn btn-default btn-circle grow" [ngClass]="{'btn-lg': size === 'm', 'btn-xl': size === 'g'}">
+  <a [href]="url" target="_blank" type="button" class="btn btn-default btn-circle grow" [ngClass]="{'btn-lg': size === 'm', 'btn-xl': size === 'g'}">
     <ng-content></ng-content>
-  </button>
+  </a>
   `,
   styleUrls: ['./circle-button.component.scss']
 })
 export class CircleButtonComponent {
 
   @Input('size')
-  size: string = 'btn-lg'
+  size: string = 'p'
+
+  @Input('link-url')
+  url: string = '#'
 
 }
