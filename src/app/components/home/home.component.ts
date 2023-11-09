@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CircleButtonComponent } from 'src/app/shared/components/circle-button/circle-button.component';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-home',
@@ -7,5 +7,12 @@ import { CircleButtonComponent } from 'src/app/shared/components/circle-button/c
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
+
+  constructor(private translate: TranslateService) {
+  }
+
+  getTranslated(chave: string) {
+    return this.translate.instant(chave);
+  }
 
 }

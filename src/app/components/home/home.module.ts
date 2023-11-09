@@ -6,6 +6,7 @@ import { CircleButtonComponent } from 'src/app/shared/components/circle-button/c
 import { HomeComponent } from './home.component';
 import { HomeHeaderComponent } from './home-header/home-header.component';
 import { HomeFooterComponent } from './home-footer/home-footer.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 
@@ -17,6 +18,7 @@ import { HomeFooterComponent } from './home-footer/home-footer.component';
   ],
   imports: [
     CommonModule,
+    TranslateModule,
     CircleButtonComponent,
     SwitchComponent,
     ProjectComponent
