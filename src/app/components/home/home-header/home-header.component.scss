@@ -6,3 +6,12 @@ app-switch {
     padding-right: 5px;
     padding-left: 5px;
 }
+
+.link-header {
+    text-decoration: none;
+    color: var(--color-tertiary);
+}
+
+.link-header:hover {
+    text-decoration: underline var(--color-secondary) 2px;
+}
