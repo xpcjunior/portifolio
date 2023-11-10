@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { CircleButtonComponent } from '../circle-button/circle-button.component';
 import { TranslateModule } from '@ngx-translate/core';
-import { FontAwesomeIconsModule } from '../../modules/fontawesomeicons/fontawesomeicons.module';
+import { FontAwesomeIconsModule } from '../../modules/fa-icons.module';
 
 @Component({
   standalone: true,

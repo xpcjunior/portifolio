@@ -9,7 +9,7 @@ export function HttpLoaderFactory(http: HttpClient) {
 }
 
 @NgModule({
-  declarations: [],
+  exports: [TranslateModule],
   imports: [
     HttpClientModule,
     TranslateModule.forRoot({
@@ -19,7 +19,6 @@ export function HttpLoaderFactory(http: HttpClient) {
         deps: [HttpClient]
       }
     })
-  ],
-  exports: [TranslateModule]
+  ]  
 })
 export class TranslationModule { }

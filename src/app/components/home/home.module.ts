@@ -7,7 +7,7 @@ import { HomeComponent } from './home.component';
 import { HomeHeaderComponent } from './home-header/home-header.component';
 import { HomeFooterComponent } from './home-footer/home-footer.component';
 import { TranslateModule } from '@ngx-translate/core';
-import { FontAwesomeIconsModule } from 'src/app/shared/modules/fontawesomeicons/fontawesomeicons.module';
+import { FontAwesomeIconsModule } from 'src/app/shared/modules/fa-icons.module';
 
 
 

@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CommonModule } from '@angular/common';
 import { HomeModule } from './components/home/home.module';
-import { TranslationModule } from './shared/modules/translation/translation.module';
+import { TranslationModule } from './shared/modules/translation.module';
 
 @NgModule({
   declarations: [
