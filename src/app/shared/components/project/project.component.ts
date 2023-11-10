@@ -2,10 +2,11 @@ import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { CircleButtonComponent } from '../circle-button/circle-button.component';
 import { TranslateModule } from '@ngx-translate/core';
+import { FontAwesomeIconsModule } from '../../modules/fontawesomeicons/fontawesomeicons.module';
 
 @Component({
   standalone: true,
-  imports: [CommonModule, CircleButtonComponent, TranslateModule],
+  imports: [CommonModule, CircleButtonComponent, TranslateModule, FontAwesomeIconsModule],
   selector: 'app-project',
   templateUrl: './project.component.html',
   styleUrls: ['./project.component.scss']

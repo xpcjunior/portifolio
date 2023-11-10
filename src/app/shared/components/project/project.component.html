@@ -22,11 +22,11 @@
         <div [ngClass]="{'d-flex justify-content-end': orientacao === false}">
 
             <app-circle-button [link-url]="project_url" size="m">
-                <i class="fa fa-play c-secondary" aria-hidden="true"></i>
+                <fa-icon [icon]="['fas', 'play']" class="c-secondary"></fa-icon>
             </app-circle-button>
             
             <app-circle-button [link-url]="code_url" size="m">
-                <i class="fa fa-code c-tertiary" aria-hidden="true"></i>
+                <fa-icon [icon]="['fas', 'code']" class="c-tertiary"></fa-icon>
             </app-circle-button>
 
         </div>
