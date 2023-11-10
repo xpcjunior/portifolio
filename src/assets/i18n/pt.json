@@ -6,7 +6,7 @@
     "tema_claro": "Tema claro",
     "apps": {
         "app-portifolio": {
-            "titulo": "Portifólio",
+            "titulo": "Portfólio",
             "tags": "angular 16, html5, css, javascript",
             "descricao": "Aplicação para exbicição dos projetos realizados por Paulo Cabral bem como as tecnologias empregadas e um pouco sobre o própro Paulo."
         }
