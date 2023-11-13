@@ -1,5 +1,6 @@
 .portifolio-nome {
     font-weight: bold;
+    font-size: 2.6rem;
 }
 
 app-switch {
@@ -12,6 +13,24 @@ app-switch {
     color: var(--color-tertiary);
 }
 
+.div-link-hearder {
+    justify-content: right;
+    padding: 5px 8px 5px 5px;
+}
+
 .link-header:hover {
     text-decoration: underline var(--color-secondary) 2px;
+}
+
+@media (max-width: 770px) {
+
+    .div-portifolio-nome {
+        justify-content: center !important;
+        padding: 10px 0px 10px 0px;
+    }
+
+    .div-link-hearder {
+        justify-content: center !important;
+    }
+
 }
