@@ -2,13 +2,14 @@ import { CommonModule } from '@angular/common';
 import { Component, ElementRef, Input, Renderer2 } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { FontAwesomeIconsModule } from '../../modules/fa-icons.module';
+import { TranslationModule } from '../../modules/translation.module';
 
 @Component({
   standalone: true,
-  imports: [CommonModule, RouterModule, FontAwesomeIconsModule],
+  imports: [CommonModule, RouterModule, FontAwesomeIconsModule, TranslationModule],
   selector: 'app-theme-switcher',
   template: `
-  <button type="button" (click)="mudarCorDeFundo()" [title]="'Alterar para tema'" class="btn btn-default btn-circle grow">
+  <button type="button" (click)="mudarCorDeFundo()" [title]="getTranslated()" class="btn btn-default btn-circle grow">
     <ng-template *ngIf="isLightTheme; then iconelua else iconesol"></ng-template>
   </button>
   <ng-template #iconelua>
@@ -27,7 +28,8 @@ export class ThemeSwitcherComponent {
 
   constructor(
     private renderer: Renderer2,
-    private el: ElementRef
+    private el: ElementRef,
+    private transModule: TranslationModule
   ) {}
 
   mudarCorDeFundo() {
@@ -44,6 +46,13 @@ export class ThemeSwitcherComponent {
         this.classLightTheme
       );
     }
+  }
+
+  getTranslated() {
+    if (this.isLightTheme) {
+      return this.transModule.getTranslated('tema_escuro');
+    }
+    return this.transModule.getTranslated('tema_claro');
   }
 
 }

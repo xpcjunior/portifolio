@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { TranslationModule } from '../../modules/translation.module';
 
 @Component({
   standalone: true,
-  imports: [TranslateModule],
+  imports: [],
   selector: 'app-switch',
   template: `
   <label class="switch">
@@ -19,14 +19,14 @@ export class SwitchComponent {
 
   lang_pt: Boolean = true;
 
-  constructor(private translate: TranslateService) {}
+  constructor(private translate: TranslationModule) {}
   
   changeLanguage() {
     this.lang_pt = !this.lang_pt;
     if(this.lang_pt) {
-      this.translate.use('pt');
+      this.translate.usePtLanguage();
     } else {
-      this.translate.use('en');
+      this.translate.useEnLanguage();
     }
   }
 

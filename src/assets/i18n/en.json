@@ -2,13 +2,13 @@
     "projetos": "projects",
     "cargos": "Data Scientist | Full Stack Python Developer",
     "sobre": "I have worked with software development for a long time, including having worked as a Tech Lead. I have a master's degree in Computational Modeling, through which I gained experience with data and machine learning and ended up falling in love with the area of ​​Data Science. Combining these two experiences from my life, I became a data scientist capable of creating well-designed and well-structured end-to-end solutions. I am very communicative, I really value work well done, good relationships between co-workers and I am always open to learning and showing my value.",
-    "tema_escuro": "Dark Theme",
-    "tema_claro": "Light Theme",
+    "tema_escuro": "change to: Dark Theme",
+    "tema_claro": "change to: Light Theme",
     "apps": {
         "app-portifolio": {
             "titulo": "Portfolio",
             "tags": "angular 16, html5, css, javascript",
-            "descricao": "Application to showcase the projects carried out by Paulo Cabral as well as the technologies used and a little about Paulo himself."
+            "descricao": "Application to showcase the projects made by Paulo Cabral as well as the technologies used and a little about Paulo himself."
         }
     }
 }

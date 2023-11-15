@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import { TranslationModule } from 'src/app/shared/modules/translation.module';
 
 @Component({
   selector: 'app-home',
@@ -8,11 +8,11 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class HomeComponent {
 
-  constructor(private translate: TranslateService) {
+  constructor(private transModule: TranslationModule) {
   }
 
   getTranslated(chave: string) {
-    return this.translate.instant(chave);
+    return this.transModule.getTranslated(chave);
   }
 
 }

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import { TranslationModule } from './shared/modules/translation.module';
 
 @Component({
   selector: 'app-root',
@@ -10,10 +10,9 @@ export class AppComponent {
   title = 'portifolio';
 
   constructor(
-    private translate: TranslateService
+    private translate: TranslationModule
   ) {
-    translate.setDefaultLang('pt'); // Define o idioma padrão
-    translate.use('pt'); // Usar o idioma padrão inicialmente
+    translate.setupLanguage()
   }
 
 }

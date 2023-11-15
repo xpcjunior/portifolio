@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateLoader, TranslateModule, TranslateService } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http'
 
@@ -21,4 +21,26 @@ export function HttpLoaderFactory(http: HttpClient) {
     })
   ]  
 })
-export class TranslationModule { }
+export class TranslationModule {
+
+  constructor(private translate: TranslateService) {
+  }
+  
+  setupLanguage() {
+    this.translate.setDefaultLang('pt');
+    this.translate.use('pt');
+  }
+
+  getTranslated(chave: string) {
+    return this.translate.instant(chave);
+  }
+
+  usePtLanguage() {
+    this.translate.use('pt');
+  }
+
+  useEnLanguage() {
+    this.translate.use('en');
+  }
+  
+}
