@@ -1,5 +1,5 @@
 <header>
-    <app-home-header></app-home-header>
+    <app-home-header/>
 </header>
 <main>
 
@@ -16,19 +16,19 @@
 
                 <div class="contact-buttons d-flex justify-content-center">
                     <app-circle-button link-url="https://www.linkedin.com/in/paulo-xis-cabral/" size="g">
-                        <fa-icon [icon]="['fab', 'linkedin']" class="c-tertiary"></fa-icon>
+                        <fa-icon [icon]="['fab', 'linkedin']" class="c-tertiary"/>
                     </app-circle-button>
                     
                     <app-circle-button link-url="https://github.com/xpcjunior" size="g">
-                        <fa-icon [icon]="['fab', 'github']" class="c-tertiary"></fa-icon>
+                        <fa-icon [icon]="['fab', 'github']" class="c-tertiary"/>
                     </app-circle-button>
                     
                     <app-circle-button link-url="https://wa.me/+5573999772741" size="g">
-                        <fa-icon [icon]="['fab', 'whatsapp']" class="c-tertiary"></fa-icon>
+                        <fa-icon [icon]="['fab', 'whatsapp']" class="c-tertiary"/>
                     </app-circle-button>
                     
                     <app-circle-button link-url="mailto:paulo.junior.cabral@gmail.com?subject=Contato%20via%20portif%C3%B3lio" size="g">
-                        <fa-icon [icon]="['far', 'envelope']" class="c-tertiary"></fa-icon>
+                        <fa-icon [icon]="['fas', 'envelope']" class="c-tertiary"/>
                     </app-circle-button>
                 </div>
 
@@ -57,13 +57,14 @@
 
         <div id="sec-projetos">
 
-            <app-project 
-            [project-name]="getTranslated('apps.app-portifolio.titulo')"
-            [project-descr]="getTranslated('apps.app-portifolio.descricao')"
-            [project-tags]="getTranslated('apps.app-portifolio.tags')"
-            project-img="/assets/img/capa_proj_portifolio.png"
-            project-code-url="https://github.com/xpcjunior/portifolio"
-            [orientation]="true"></app-project>
+            <app-project
+                [project-name]="getTranslated('apps.app-portifolio.titulo')"
+                [project-descr]="getTranslated('apps.app-portifolio.descricao')"
+                [project-tags]="getTranslated('apps.app-portifolio.tags')"
+                project-img="/assets/img/capa_proj_portifolio.png"
+                project-code-url="https://github.com/xpcjunior/portifolio"
+                [orientation]="true"
+            />
 
         </div>
 
@@ -71,5 +72,5 @@
 
 </main>
 <footer class="text-center">
-    <app-home-footer></app-home-footer>
+    <app-home-footer/>
 </footer>

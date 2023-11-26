@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faAngular, faGithub, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-import { faCopyright, faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import { faCode, faMoon, faPlay, faSun } from '@fortawesome/free-solid-svg-icons';
+import { faCopyright } from '@fortawesome/free-regular-svg-icons';
+import { faCode, faEnvelope, faEye, faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -17,10 +17,10 @@ export class FontAwesomeIconsModule {
       faCode,
       faCopyright,
       faEnvelope,
+      faEye,
       faGithub,
       faLinkedin,
       faMoon,
-      faPlay,
       faSun,
       faWhatsapp
     );

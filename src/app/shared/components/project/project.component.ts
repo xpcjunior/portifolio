@@ -9,7 +9,7 @@ import { FontAwesomeIconsModule } from '../../modules/fa-icons.module';
   imports: [CommonModule, CircleButtonComponent, TranslateModule, FontAwesomeIconsModule],
   selector: 'app-project',
   templateUrl: './project.component.html',
-  styleUrls: ['./project.component.scss']
+  styleUrl: './project.component.scss'
 })
 export class ProjectComponent {
 

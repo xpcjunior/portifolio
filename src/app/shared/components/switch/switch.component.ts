@@ -13,7 +13,7 @@ import { TranslationModule } from '../../modules/translation.module';
       <span class="slider round"></span>
   </label>
   `,
-  styleUrls: ['./switch.component.scss']
+  styleUrl: './switch.component.scss'
 })
 export class SwitchComponent {
 

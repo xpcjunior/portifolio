@@ -10,16 +10,14 @@ import { TranslationModule } from '../../modules/translation.module';
   selector: 'app-theme-switcher',
   template: `
   <button type="button" (click)="mudarCorDeFundo()" [title]="getTranslated()" class="btn btn-default btn-circle grow">
-    <ng-template *ngIf="isLightTheme; then iconelua else iconesol"></ng-template>
+    @if (isLightTheme) {
+      <fa-icon [icon]="['fas', 'moon']" class="c-secondary"/>
+    } @else {
+      <fa-icon [icon]="['fas', 'sun']" class="c-secondary"/>
+    }
   </button>
-  <ng-template #iconelua>
-    <fa-icon [icon]="['fas', 'moon']" class="c-secondary"></fa-icon>
-  </ng-template>
-  <ng-template #iconesol>
-    <fa-icon [icon]="['fas', 'sun']" class="c-secondary"></fa-icon>
-  </ng-template>
   `,
-  styleUrls: ['./theme-switcher.component.scss']
+  styleUrl: './theme-switcher.component.scss'
 })
 export class ThemeSwitcherComponent {
 

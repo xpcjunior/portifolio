@@ -1,34 +1,51 @@
 <div class="row">
-    <div class="col-md-6" [ngClass]="orientacao ? 'd-flex justify-content-center align-content-center flex-wrap' : 'd-flex flex-column'">
-        <ng-template *ngIf="orientacao; then loading else aabb"></ng-template>
-    </div>
-    <div class="col-md-6" [ngClass]="orientacao ? 'd-flex flex-column' : 'd-flex justify-content-center align-content-center flex-wrap'">
-        <ng-template *ngIf="orientacao; then aabb else loading"></ng-template>
-    </div>
+    @if (orientacao) {
+        <div class="col-md-6 d-flex justify-content-center align-content-center flex-wrap">
+            <a class="a_img_project" [href]="project_url" target="_blank">
+                <img class="img_project grow" [src]="src_img" alt="" />
+            </a>
+        </div>
+        <div class="col-md-6 d-flex flex-column">
+            <div class="project-title">{{nome}}</div>
+            <div class="project-tags">{{tags}}</div>
+            <div class="project-descr flex-grow-1">
+                <p>{{descr}}</p>
+            </div>
+            <div class="botoes_projetos">
+
+                <app-circle-button [link-url]="project_url" size="m">
+                    <fa-icon [icon]="['fas', 'eye']" class="c-tertiary"/>
+                </app-circle-button>
+                
+                <app-circle-button [link-url]="code_url" size="m">
+                    <fa-icon [icon]="['fas', 'code']" class="c-tertiary"/>
+                </app-circle-button>
+
+            </div>
+        </div>
+    } @else {
+        <div class="col-md-6 d-flex flex-column">
+            <div class="project-title d-flex justify-content-end">{{nome}}</div>
+            <div class="project-tags d-flex justify-content-end">{{tags}}</div>
+            <div class="project-descr flex-grow-1">
+                <p>{{descr}}</p>
+            </div>
+            <div class="botoes_projetos d-flex justify-content-end">
+                
+                <app-circle-button [link-url]="project_url" size="m">
+                    <fa-icon [icon]="['fas', 'eye']" class="c-tertiary"/>
+                </app-circle-button>
+                
+                <app-circle-button [link-url]="code_url" size="m">
+                    <fa-icon [icon]="['fas', 'code']" class="c-tertiary"/>
+                </app-circle-button>
+                
+            </div>
+        </div>
+        <div class="col-md-6 d-flex justify-content-center align-content-center flex-wrap">
+            <a class="a_img_project" [href]="project_url" target="_blank">
+                <img class="img_project grow" [src]="src_img" alt="" />
+            </a>
+        </div>
+    }
 </div>
-
-<ng-template #loading>
-    <a class="a_img_project" [href]="project_url" target="_blank">
-        <img class="img_project grow" [src]="src_img" alt="" />
-    </a>
-</ng-template>
-
-<ng-template #aabb>
-    <div class="project-title" [ngClass]="{'d-flex justify-content-end': orientacao === false}">{{nome}}</div>
-    <div class="project-tags" [ngClass]="{'d-flex justify-content-end': orientacao === false}">{{tags}}</div>
-    <div class="project-descr flex-grow-1">
-        <p>{{descr}}</p>
-    </div>
-    <div class="botoes_projetos" [ngClass]="{'justify-content-end': orientacao === false}">
-
-        <app-circle-button [link-url]="project_url" size="m">
-            <fa-icon [icon]="['fas', 'play']" class="c-secondary"></fa-icon>
-        </app-circle-button>
-        
-        <app-circle-button [link-url]="code_url" size="m">
-            <fa-icon [icon]="['fas', 'code']" class="c-tertiary"></fa-icon>
-        </app-circle-button>
-
-    </div>
-</ng-template>
-

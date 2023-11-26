@@ -8,10 +8,10 @@ import { RouterModule } from '@angular/router';
   selector: 'app-circle-button',
   template: `
   <a [href]="url" target="_blank" type="button" class="btn btn-default btn-circle grow" [ngClass]="{'btn-lg': size === 'm', 'btn-xl': size === 'g'}">
-    <ng-content></ng-content>
+    <ng-content/>
   </a>
   `,
-  styleUrls: ['./circle-button.component.scss']
+  styleUrl: './circle-button.component.scss'
 })
 export class CircleButtonComponent {
 

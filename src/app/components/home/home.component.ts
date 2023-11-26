@@ -4,7 +4,7 @@ import { TranslationModule } from 'src/app/shared/modules/translation.module';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrl: './home.component.scss'
 })
 export class HomeComponent {
 
