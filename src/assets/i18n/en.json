@@ -9,6 +9,11 @@
             "titulo": "Portfolio",
             "tags": "angular 16, html5, css, javascript",
             "descricao": "Application to showcase the projects made by Paulo Cabral as well as the technologies used and a little about Paulo himself."
+        },
+        "app-ava_por_tcu": {
+            "titulo": "Annual evaluation of the portal and corresponding indexes 2023",
+            "tags": "PowerBI, Python",
+            "descricao": "Dashboard that demonstrates the results of the 2023 annual evaluation of internal and external research on the portal of the Tribunal de contas da União from Brasil. The report also presents analyzes and indices obtained from this data."
         }
     }
 }

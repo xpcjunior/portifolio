@@ -58,12 +58,21 @@
         <div id="sec-projetos">
 
             <app-project
+                [project-name]="getTranslated('apps.app-ava_por_tcu.titulo')"
+                [project-descr]="getTranslated('apps.app-ava_por_tcu.descricao')"
+                [project-tags]="getTranslated('apps.app-ava_por_tcu.tags')"
+                project-img="/assets/img/capa_proj_ava_anu_tcu_2023.png"
+                project-url="https://app.powerbi.com/view?r=eyJrIjoiODc4NmRjODktMTQ2OC00YWUzLTg4N2UtMjVlYjNjZTY5MjlhIiwidCI6ImJmMTU4MTg4LTlhMTEtNDRjMi1iN2ZjLTIxZTg1NjEzYmEyNyJ9&pageName=ReportSection5ca67f71614949cb0142"
+                [orientation]="true"
+            />
+
+            <app-project
                 [project-name]="getTranslated('apps.app-portifolio.titulo')"
                 [project-descr]="getTranslated('apps.app-portifolio.descricao')"
                 [project-tags]="getTranslated('apps.app-portifolio.tags')"
                 project-img="/assets/img/capa_proj_portifolio.png"
                 project-code-url="https://github.com/xpcjunior/portifolio"
-                [orientation]="true"
+                [orientation]="false"
             />
 
         </div>

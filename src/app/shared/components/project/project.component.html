@@ -17,9 +17,11 @@
                     <fa-icon [icon]="['fas', 'eye']" class="c-tertiary"/>
                 </app-circle-button>
                 
-                <app-circle-button [link-url]="code_url" size="m">
-                    <fa-icon [icon]="['fas', 'code']" class="c-tertiary"/>
-                </app-circle-button>
+                @if (code_url) {
+                    <app-circle-button [link-url]="code_url" size="m">
+                        <fa-icon [icon]="['fas', 'code']" class="c-tertiary"/>
+                    </app-circle-button>
+                }
 
             </div>
         </div>
@@ -36,9 +38,11 @@
                     <fa-icon [icon]="['fas', 'eye']" class="c-tertiary"/>
                 </app-circle-button>
                 
-                <app-circle-button [link-url]="code_url" size="m">
-                    <fa-icon [icon]="['fas', 'code']" class="c-tertiary"/>
-                </app-circle-button>
+                @if (code_url) {
+                    <app-circle-button [link-url]="code_url" size="m">
+                        <fa-icon [icon]="['fas', 'code']" class="c-tertiary"/>
+                    </app-circle-button>
+                }
                 
             </div>
         </div>
