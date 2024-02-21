@@ -67,12 +67,22 @@
             />
 
             <app-project
+                [project-name]="getTranslated('apps.app-heineken.titulo')"
+                [project-descr]="getTranslated('apps.app-heineken.descricao')"
+                [project-tags]="getTranslated('apps.app-heineken.tags')"
+                project-img="/assets/img/capa_proj_heineken.png"
+                project-url="https://www.canva.com/design/DAF6X03yKjk/T-H9tcz5mCuqDqAlMrVyCg/edit?utm_content=DAF6X03yKjk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                project-code-url="https://github.com/xpcjunior/heinekendscase2024"
+                [orientation]="false"
+            />
+
+            <app-project
                 [project-name]="getTranslated('apps.app-portifolio.titulo')"
                 [project-descr]="getTranslated('apps.app-portifolio.descricao')"
                 [project-tags]="getTranslated('apps.app-portifolio.tags')"
                 project-img="/assets/img/capa_proj_portifolio.png"
                 project-code-url="https://github.com/xpcjunior/portifolio"
-                [orientation]="false"
+                [orientation]="true"
             />
 
         </div>

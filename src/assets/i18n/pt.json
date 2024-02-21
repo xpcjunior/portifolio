@@ -14,6 +14,11 @@
             "titulo": "Avaliação Anual do portal e índices correspondentes 2023",
             "tags": "PowerBI, Python",
             "descricao": "Dashboard que demonstra os resultados da avaliação anual de 2023 das pesquisas interna e externa sobre o portal do Tribunal de contas da União. O relatório também apresenta análises e índices obtidos a partir destes dados."
+        },
+        "app-heineken": {
+            "titulo": "Heineken Data Science use case 2024",
+            "tags": "Python, Machine Learning",
+            "descricao": "Modelo de predição de valor de coloração da cerveja"
         }
     }
 }
