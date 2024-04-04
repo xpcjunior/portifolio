@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { TranslationModule } from '../../modules/translation.module';
+import { Router } from '@angular/router';
 
 @Component({
   standalone: true,
@@ -15,18 +16,21 @@ import { TranslationModule } from '../../modules/translation.module';
   `,
   styleUrl: './switch.component.scss'
 })
-export class SwitchComponent {
+export class SwitchComponent implements OnInit {
 
   lang_pt: Boolean = true;
 
-  constructor(private translate: TranslationModule) {}
+  constructor(private router: Router) {}
+
+  ngOnInit(): void {
+    this.lang_pt = !this.router.url.includes('en');
+  }
   
   changeLanguage() {
-    this.lang_pt = !this.lang_pt;
     if(this.lang_pt) {
-      this.translate.usePtLanguage();
+      this.router.navigateByUrl('/en');
     } else {
-      this.translate.useEnLanguage();
+      this.router.navigateByUrl('/');
     }
   }
 

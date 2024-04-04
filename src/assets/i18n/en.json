@@ -3,27 +3,5 @@
     "cargos": "Data Scientist | Full Stack Python Developer",
     "sobre": "I have more than 13 years of proven work with Fullstack software development, including having worked as a Tech Lead. I produce complete and well-structured data science solutions using Python, PowerBI, Angular, Machine Learning and DeepLearning. In my current role I work directly with data analysis, creating models and forecasts in addition to generating APIs and Frontends when necessary. My deliveries always follow the standards of the Scrum agile methodology, a well-defined GIT flow and an organized deployment with Jenkins. I'm passionate about what I do! Which leads me to constant learning and evolution. My ambition is to grow more and more in the Data Science area, continuing to create well-polished and impactful solutions using all my previous experience as a dev.",
     "tema_escuro": "change to: Dark Theme",
-    "tema_claro": "change to: Light Theme",
-    "apps": {
-        "app-portifolio": {
-            "titulo": "Portfolio",
-            "tags": "angular 16, html5, css, javascript",
-            "descricao": "Application to showcase the projects made by Paulo Cabral as well as the technologies used and a little about Paulo himself."
-        },
-        "app-ava_por_tcu": {
-            "titulo": "Annual evaluation of the portal and corresponding indexes 2023",
-            "tags": "PowerBI, Python",
-            "descricao": "Dashboard that demonstrates the results of the 2023 annual evaluation of internal and external research on the portal of the Tribunal de contas da União from Brasil. The report also presents analyzes and indices obtained from this data."
-        },
-        "app-heineken": {
-            "titulo": "Heineken Data Science use case 2024",
-            "tags": "Python, Machine Learning",
-            "descricao": "Beer color value prediction model"
-        },
-        "app-recomendadormusical": {
-            "titulo": "Music Recommender",
-            "tags": "Python, Machine Learning",
-            "descricao": "Music recommendation algorithm where, when entering the artist and name of the song, a list of 10 similar songs is returned. The code uses the k-means clustering technique to group similar songs."
-        }
-    }
+    "tema_claro": "change to: Light Theme"
 }

@@ -3,27 +3,5 @@
     "cargos": "Cientista de dados | Desenvolvedor python full stack",
     "sobre": "Possuo mais de 13 anos de trabalho comprovados com desenvolvimento Fullstack de softwares, inclusive tendo atuado como Tech Lead. Produzo soluções completas e bem estruturas em ciências de dados utilizando Python, PowerBI, Angular, Machine Learning e DeepLearning. No meu cargo atual atuo diretamente com análise de dados, criação de modelos e previsões além da geração de APIs e Frontends quando necessário. Minhas entregas estão sempre seguindo os padrões da metodologia ágil Scrum, um flow bem definido do GIT e um deploy organizado com o Jenkins. Sou apaixonado pelo que faço! O que me leva ao constante aprendizado e evolução. Minha ambição é crescer cada vez mais na área de Data Science, continuando a criar soluções bem polidas e impactantes utilizando toda minha experiência prévia como dev.",
     "tema_escuro": "alterar para: Tema escuro",
-    "tema_claro": "alterar para: Tema claro",
-    "apps": {
-        "app-portifolio": {
-            "titulo": "Portfólio",
-            "tags": "angular 16, html5, css, javascript",
-            "descricao": "Aplicação para exibição dos projetos realizados por Paulo Cabral, bem como as tecnologias empregadas e um pouco sobre o próprio Paulo."
-        },
-        "app-ava_por_tcu": {
-            "titulo": "Avaliação Anual do portal e índices correspondentes 2023",
-            "tags": "PowerBI, Python",
-            "descricao": "Dashboard que demonstra os resultados da avaliação anual de 2023 das pesquisas interna e externa sobre o portal do Tribunal de contas da União. O relatório também apresenta análises e índices obtidos a partir destes dados."
-        },
-        "app-heineken": {
-            "titulo": "Heineken Data Science use case 2024",
-            "tags": "Python, Machine Learning",
-            "descricao": "Modelo de predição de valor de coloração da cerveja"
-        },
-        "app-recomendadormusical": {
-            "titulo": "Recomendador Musical",
-            "tags": "Python, Machine Learning",
-            "descricao": "Algorítimo de recomendação de música onde, ao informar o artista e o nome da música, é retornada uma lista de 10 músicas semelhantes. O código utiliza a técnica de clusterização k-means para agrupar as canções semelhantes."
-        }
-    }
+    "tema_claro": "alterar para: Tema claro"
 }

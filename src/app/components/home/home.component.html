@@ -58,16 +58,29 @@
         <div id="sec-projetos">
 
             @for (p of projetos; track $index) {
-                <app-project
-                    [project-name]="p.name"
-                    [project-descr]="p.description"
-                    [project-tags]="p.tags"
-                    [project-img]="p.image_url"
-                    [project-url]="p.preview_url"
-                    [project-code-url]="p.code_url"
-                    [project-tags]="p.tags"
-                    [orientation]="$index % 2 === 0 ? false : true"
-                />
+                @if (langEn) {
+                    <app-project
+                        [project-name]="p.name"
+                        [project-descr]="p.description"
+                        [project-tags]="p.tags"
+                        [project-img]="p.image_url"
+                        [project-url]="p.preview_url"
+                        [project-code-url]="p.code_url"
+                        [project-tags]="p.tags"
+                        [orientation]="$index % 2 === 0 ? false : true"
+                    />
+                } @else {
+                    <app-project
+                        [project-name]="p.nome"
+                        [project-descr]="p.descricao"
+                        [project-tags]="p.tags"
+                        [project-img]="p.image_url"
+                        [project-url]="p.preview_url"
+                        [project-code-url]="p.code_url"
+                        [project-tags]="p.tags"
+                        [orientation]="$index % 2 === 0 ? false : true"
+                    />
+                }
             }
 
         </div>
