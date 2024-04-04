@@ -31,7 +31,8 @@
             ],
             "styles": [
               "src/styles.scss",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/assets/fontawesome-6.5.2/css/all.css"
             ],
             "scripts": []
           },
@@ -98,6 +99,23 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "portifolio:build:production",
+              "serveTarget": "portifolio:serve:production"
+            },
+            "development": {
+              "buildTarget": "portifolio:build:development",
+              "serveTarget": "portifolio:serve:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }

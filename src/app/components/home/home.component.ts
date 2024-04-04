@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ProjetoService } from 'src/app/core/project.service';
+import { ProjectoInterface } from 'src/app/shared/models/project.interface';
 import { TranslationModule } from 'src/app/shared/modules/translation.module';
 
 @Component({
@@ -6,13 +8,31 @@ import { TranslationModule } from 'src/app/shared/modules/translation.module';
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
 
-  constructor(private transModule: TranslationModule) {
+  projetos: ProjectoInterface[] = [];
+
+  constructor(
+    private transModule: TranslationModule,
+    private projetoService: ProjetoService
+  ) {
+  }
+
+  ngOnInit(): void {
+    this.carregarProjetos();
   }
 
   getTranslated(chave: string) {
     return this.transModule.getTranslated(chave);
+  }
+
+  carregarProjetos(): void {
+    this.projetoService.getProjetos().subscribe(
+      projetos => {
+        this.projetos = projetos;
+      }
+    );
+
   }
 
 }

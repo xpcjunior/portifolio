@@ -1,19 +1,18 @@
 import { CommonModule } from '@angular/common';
-import { Component, ElementRef, Input, Renderer2 } from '@angular/core';
+import { Component, ElementRef, Renderer2 } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { FontAwesomeIconsModule } from '../../modules/fa-icons.module';
 import { TranslationModule } from '../../modules/translation.module';
 
 @Component({
   standalone: true,
-  imports: [CommonModule, RouterModule, FontAwesomeIconsModule, TranslationModule],
+  imports: [CommonModule, RouterModule, TranslationModule],
   selector: 'app-theme-switcher',
   template: `
   <button type="button" (click)="mudarCorDeFundo()" [title]="getTranslated()" class="btn btn-default btn-circle grow">
     @if (isLightTheme) {
-      <fa-icon [icon]="['fas', 'moon']" class="c-secondary"/>
+      <i class="fa-solid fa-moon c-secondary"></i>
     } @else {
-      <fa-icon [icon]="['fas', 'sun']" class="c-secondary"/>
+      <i class="fa-solid fa-sun c-secondary"></i>
     }
   </button>
   `,

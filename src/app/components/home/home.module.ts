@@ -7,7 +7,6 @@ import { HomeComponent } from './home.component';
 import { HomeHeaderComponent } from './home-header/home-header.component';
 import { HomeFooterComponent } from './home-footer/home-footer.component';
 import { TranslateModule } from '@ngx-translate/core';
-import { FontAwesomeIconsModule } from 'src/app/shared/modules/fa-icons.module';
 import { ThemeSwitcherComponent } from 'src/app/shared/components/theme-switcher/theme-switcher.component';
 
 
@@ -21,7 +20,6 @@ import { ThemeSwitcherComponent } from 'src/app/shared/components/theme-switcher
   imports: [
     CommonModule,
     TranslateModule,
-    FontAwesomeIconsModule,
     CircleButtonComponent,
     SwitchComponent,
     ProjectComponent,

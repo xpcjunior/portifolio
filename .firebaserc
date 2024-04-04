@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "portifolio-paulo"
+  },
+  "targets": {
+    "portifolio-paulo": {
+      "hosting": {
+        "portifolio": [
+          "portifolio-paulo"
+        ]
+      }
+    }
   }
 }

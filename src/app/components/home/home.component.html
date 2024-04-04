@@ -16,19 +16,19 @@
 
                 <div class="contact-buttons d-flex justify-content-center">
                     <app-circle-button link-url="https://www.linkedin.com/in/paulo-xis-cabral/" size="g">
-                        <fa-icon [icon]="['fab', 'linkedin']" class="c-tertiary"/>
+                        <i class="fa-brands fa-linkedin c-tertiary"></i>
                     </app-circle-button>
                     
                     <app-circle-button link-url="https://github.com/xpcjunior" size="g">
-                        <fa-icon [icon]="['fab', 'github']" class="c-tertiary"/>
+                        <i class="fa-brands fa-github c-tertiary"></i>
                     </app-circle-button>
                     
                     <app-circle-button link-url="https://wa.me/+5573999772741" size="g">
-                        <fa-icon [icon]="['fab', 'whatsapp']" class="c-tertiary"/>
+                        <i class="fa-brands fa-whatsapp c-tertiary"></i>
                     </app-circle-button>
                     
                     <app-circle-button link-url="mailto:paulo.junior.cabral@gmail.com?subject=Contato%20via%20portif%C3%B3lio" size="g">
-                        <fa-icon [icon]="['fas', 'envelope']" class="c-tertiary"/>
+                        <i class="fa-solid fa-envelope c-tertiary"></i>
                     </app-circle-button>
                 </div>
 
@@ -57,34 +57,18 @@
 
         <div id="sec-projetos">
 
-            <app-project
-                [project-name]="getTranslated('apps.app-ava_por_tcu.titulo')"
-                [project-descr]="getTranslated('apps.app-ava_por_tcu.descricao')"
-                [project-tags]="getTranslated('apps.app-ava_por_tcu.tags')"
-                project-img="/assets/img/capa_proj_ava_anu_tcu_2023.png"
-                project-url="https://paineis.tcu.gov.br/AvaliacaoAnualPortal"
-                [orientation]="true"
-            />
-
-            <app-project
-                [project-name]="getTranslated('apps.app-heineken.titulo')"
-                [project-descr]="getTranslated('apps.app-heineken.descricao')"
-                [project-tags]="getTranslated('apps.app-heineken.tags')"
-                project-img="/assets/img/capa_proj_heineken.png"
-                project-url="https://www.canva.com/design/DAF6X03yKjk/T-H9tcz5mCuqDqAlMrVyCg/edit?utm_content=DAF6X03yKjk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
-                project-code-url="https://github.com/xpcjunior/heinekendscase2024"
-                [orientation]="false"
-            />
-
-            <app-project
-                [project-name]="getTranslated('apps.app-recomendadormusical.titulo')"
-                [project-descr]="getTranslated('apps.app-recomendadormusical.descricao')"
-                [project-tags]="getTranslated('apps.app-recomendadormusical.tags')"
-                project-img="/assets/img/recomendador_musical.png"
-                project-url="https://github.com/xpcjunior/recomendadormusical"
-                project-code-url="https://github.com/xpcjunior/recomendadormusical"
-                [orientation]="true"
-            />
+            @for (p of projetos; track $index) {
+                <app-project
+                    [project-name]="p.name"
+                    [project-descr]="p.description"
+                    [project-tags]="p.tags"
+                    [project-img]="p.image_url"
+                    [project-url]="p.preview_url"
+                    [project-code-url]="p.code_url"
+                    [project-tags]="p.tags"
+                    [orientation]="$index % 2 === 0 ? false : true"
+                />
+            }
 
         </div>
 
