@@ -8,7 +8,7 @@ import { HomeModule } from './components/home/home.module';
 import { TranslationModule } from './shared/modules/translation.module';
 
 import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
-import { getFirestore, provideFirestore } from '@angular/fire/firestore';
+import { provideFirestore, getFirestore } from '@angular/fire/firestore';
 import { environment } from 'src/environments/environment';
 
 @NgModule({
@@ -20,11 +20,12 @@ import { environment } from 'src/environments/environment';
     AppRoutingModule,
     CommonModule,
     HomeModule,
-    TranslationModule,
+    TranslationModule
+  ],
+  providers: [
     provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
     provideFirestore(() => getFirestore())
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
