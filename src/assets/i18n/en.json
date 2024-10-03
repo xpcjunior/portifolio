@@ -1,7 +1,7 @@
 {
     "projetos": "projects",
-    "cargos": "Data Scientist | Full Stack Python Developer",
-    "sobre": "I have more than 13 years of proven work with Fullstack software development, including having worked as a Tech Lead. I produce complete and well-structured data science solutions using Python, PowerBI, Angular, Machine Learning and DeepLearning. In my current role I work directly with data analysis, creating models and forecasts in addition to generating APIs and Frontends when necessary. My deliveries always follow the standards of the Scrum agile methodology, a well-defined GIT flow and an organized deployment with Jenkins. I'm passionate about what I do! Which leads me to constant learning and evolution. My ambition is to grow more and more in the Data Science area, continuing to create well-polished and impactful solutions using all my previous experience as a dev.",
+    "cargos": "Data engineer",
+    "sobre": "I have more than 13 years of proven work with Fullstack software development, including having worked as a Tech Lead. I produce complete and well-structured solutions in the data area. I work directly with the construction of Pipelines and APIs using Python, as well as data analysis and visualization with PowerBI and Angular. My deliveries always follow the standards of the Scrum agile methodology, a well-defined GIT flow and an organized deployment with Docker, Jenkins and Kubernets. I'm passionate about what I do! Which leads me to constant learning and evolution. My ambition is to grow more and more in the Data Science area, continuing to create well-polished and impactful solutions, using all my previous experience as a dev.",
     "tema_escuro": "change to: Dark Theme",
     "tema_claro": "change to: Light Theme"
 }

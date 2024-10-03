@@ -1,7 +1,7 @@
 {
     "projetos": "projetos",
-    "cargos": "Cientista de dados | Desenvolvedor python full stack",
-    "sobre": "Possuo mais de 13 anos de trabalho comprovados com desenvolvimento Fullstack de softwares, inclusive tendo atuado como Tech Lead. Produzo soluções completas e bem estruturas em ciências de dados utilizando Python, PowerBI, Angular, Machine Learning e DeepLearning. No meu cargo atual atuo diretamente com análise de dados, criação de modelos e previsões além da geração de APIs e Frontends quando necessário. Minhas entregas estão sempre seguindo os padrões da metodologia ágil Scrum, um flow bem definido do GIT e um deploy organizado com o Jenkins. Sou apaixonado pelo que faço! O que me leva ao constante aprendizado e evolução. Minha ambição é crescer cada vez mais na área de Data Science, continuando a criar soluções bem polidas e impactantes utilizando toda minha experiência prévia como dev.",
+    "cargos": "Engenheiro de dados",
+    "sobre": "Possuo mais de 13 anos de trabalho comprovados com desenvolvimento Fullstack de softwares, inclusive tendo atuado como Tech Lead. Produzo soluções completas e bem estruturadas na área de dados. Atuo diretamente com a construção de Pipelines e APIs utilizando Python, além de análise e visualização de dados com PowerBI e Angular. Minhas entregas estão sempre seguindo os padrões da metodologia ágil Scrum, um flow bem definido do GIT e um deploy organizado com o Docker, Jenkins e Kubernets. Sou apaixonado pelo que faço! O que me leva ao constante aprendizado e evolução. Minha ambição é crescer cada vez mais na área de Data Science, continuando a criar soluções bem polidas e impactantes, utilizando toda minha experiência prévia como dev.",
     "tema_escuro": "alterar para: Tema escuro",
     "tema_claro": "alterar para: Tema claro"
 }
