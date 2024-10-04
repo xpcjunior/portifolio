@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Firestore, collection, collectionData, orderBy, query } from '@angular/fire/firestore';
-import { Observable } from 'rxjs';
+import { Firestore, collection, collectionData, getDocs, orderBy, query } from '@angular/fire/firestore';
+import { from, Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { ProjectoInterface } from '../shared/models/project.interface';
 
@@ -9,21 +9,24 @@ import { ProjectoInterface } from '../shared/models/project.interface';
 })
 export class ProjetoService {
 
+  private collectionName = 'project';
+
   constructor(private firestore: Firestore) { }
 
   getProjetos(): Observable<ProjectoInterface[]> {
 
-    const projetosCollection = query(collection(this.firestore, 'project'), orderBy('name'));
-
-    let projetos: Observable<ProjectoInterface[]> = collectionData(projetosCollection).pipe(
-      map((projects: any[]) => {
-        return projects.map(project => {
-          return project;
-        });
-      })
+    const collectionQuery = query(
+      collection(this.firestore, this.collectionName), orderBy('order')
     );
 
-    return projetos;
+    return from(getDocs(collectionQuery).then(
+      (snapshot) => {
+        return snapshot.docs.map(
+          doc => ({ id: doc.id, ...doc.data() } as ProjectoInterface)
+        );
+      }
+    ));
+
   }
   
 }
